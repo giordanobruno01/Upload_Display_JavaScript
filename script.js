@@ -1,15 +1,21 @@
 function display() {
   img = document.getElementById("imginput");
   img = img.files[0];
-  const imgtype = img.type;
-  console.log(imgtype);
-  const typ = imgtype.substring(0, 5);
+  
+  
+//   const dropArea = document.getElementById("drop-area");
 
+//   dropArea.addEventListener("dragover", (event) => {
+//     event.stopPropagation();
+//     event.preventDefault();
+//     // Style the drag-and-drop as a "copy file" operation.
+//     event.dataTransfer.dropEffect = "copy";
+//   });
 
-
-  if (typ == "image") {
-    console.log("hello");
-  } else {
-    alert("Not a Image file");
-  }
+//   dropArea.addEventListener("drop", (event) => {
+//     event.stopPropagation();
+//     event.preventDefault();
+//     const fileList = event.dataTransfer.files;
+//     console.log(fileList);
+//   });
 }
