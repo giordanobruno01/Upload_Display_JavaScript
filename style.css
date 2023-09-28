@@ -1,0 +1,16 @@
+#block {
+  display: block;
+  width: 500px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+#block-image {
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
