@@ -1,8 +1,16 @@
 function display() {
-  img = document.getElementById("imginput");
-  img = img.files[0];
-  
-  
+ const img = document.getElementById("imginput");
+ const img2 = img.files[0];
+ console.log(img2.type);
+  const reader = new FileReader();
+  reader.onload = function(e){
+    document.getElementById("images").src = e.target.result;
+
+    console.log("hi");
+};
+
+reader.readAsDataURL(img2);
+
 //   const dropArea = document.getElementById("drop-area");
 
 //   dropArea.addEventListener("dragover", (event) => {
